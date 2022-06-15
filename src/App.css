@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.hui {
+  margin: 1%;
+  display: grid ;
+  grid-template-areas: 
+  "h h"
+  "p m1"
+  "p m2";
+
+  grid-template-columns: 1fr 350px;
+grid-template-rows: 100px 1fr 1fr;
+
+grid-gap: 10px;
+height: 95vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border: 1px solid #CAD0D2;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.he {
+  border-radius: 10px;
+  padding: 10px; 
+  grid-area: h;
+  background-color: antiquewhite;
+}
+
+.pa {
+  border-radius: 10px;
+  padding: 10px; 
+  grid-area: p;
+  background-color: royalblue;
+}
+.m1 {
+  border-radius: 10px;
+  padding: 10px; 
+  padding: 20px; 
+  grid-area: m1;
+  background-color: bisque;
+}
+.m2 {
+  border-radius: 10px;
+  padding: 10px; 
+  grid-area: m2;
+  background-color: yellowgreen;
 }
